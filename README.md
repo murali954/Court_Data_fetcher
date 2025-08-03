@@ -35,7 +35,7 @@ This project provides automated access to case information from multiple Delhi D
 
 git clone https://github.com/murali954/Court_Data_fetcher.git
 
-cd delhi-court-fetcher
+cd court_data_fetcher
 
 
 2. **Create virtual environment**
