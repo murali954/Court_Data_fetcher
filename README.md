@@ -56,7 +56,7 @@ cp .env.example .env
 
 5. **Run the application**
 ```bash
-streamlit run delhi_district_court_scraper_demo.py
+streamlit run app.py
 ```
 
 ## 📋 Requirements
@@ -160,65 +160,6 @@ CAPTCHA_SERVICE=manual
 BROWSER_HEADLESS=false  # Set to false for manual CAPTCHA solving
 BROWSER_TIMEOUT=60      # Increased timeout for manual solving
 ```
-
-## 📊 Sample Data & Testing
-
-### Demo Mode Examples
-
-The application includes realistic demo data for testing:
-
-#### Case Number Search Examples
-```python
-# Guaranteed working examples in demo mode:
-Court: "New Delhi District Court"
-- CC 123/2024 → Pending criminal case
-- CC 234/2024 → Arguments concluded
-- NI ACT 67/2024 → Cheque bounce case
-- SESSION 23/2023 → Murder case trial
-
-Court: "West Delhi District Court"  
-- NI ACT 89/2023 → Commercial dispute
-- SESSION 23/2023 → Criminal trial
-```
-
-#### Party Name Search Examples
-```python
-# Working party names in demo mode:
-- "State" → Returns 3 criminal cases
-- "Ram Kumar" → Returns 1 appeal case
-- "Delhi Police" → Returns 1 FIR case
-```
-
-### Sample Output Structure
-```json
-{
-  "court": "New Delhi District Court",
-  "search_type": "case_number",
-  "timestamp": "2024-08-03 15:30:45",
-  "case_found": true,
-  "cases": [
-    {
-      "case_number": "CC 123/2024",
-      "petitioner": "State of NCT of Delhi",
-      "respondent": "Rajesh Kumar",
-      "case_status": "Pending Trial",
-      "filing_date": "15/03/2024",
-      "next_hearing_date": "25/08/2024",
-      "judge_court": "Shri Anil Kumar Sisodia, ACMM",
-      "act_section": "IPC Sec 420, 406"
-    }
-  ],
-  "documents": [
-    {
-      "text": "Order dated 15/03/2024",
-      "url": "https://newdelhi.dcourts.gov.in/orders/CC_123_2024.pdf",
-      "type": "PDF"
-    }
-  ]
-}
-```
-
-
 
 ## 🔧 Configuration Options
 
