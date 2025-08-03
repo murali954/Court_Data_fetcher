@@ -192,9 +192,6 @@ SCRAPER_DELAY_BETWEEN_REQUESTS=3
 - Error rate monitoring
 - CAPTCHA solve rate tracking
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ## ⭐ Acknowledgments
@@ -205,4 +202,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Disclaimer**: This tool is for educational and research purposes. Always comply with website terms of service and applicable laws when scraping web content.
