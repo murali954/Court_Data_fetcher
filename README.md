@@ -105,13 +105,3 @@ SCRAPER_DELAY_BETWEEN_REQUESTS=3
 - Error rate monitoring
 - CAPTCHA solve rate tracking
 
-
-
-## ⭐ Acknowledgments
-
-- Delhi District Courts for providing public access to case information
-- Streamlit team for the excellent web framework
-- BeautifulSoup and Requests libraries for web scraping capabilities
-
----
-
